@@ -1,0 +1,40 @@
+package demo;
+import java.util.*;
+
+public class Stars {
+	public static void main(String[] args) {
+		
+		int i,j;
+		for (i=0;i<=3;i++)                   //output
+		{                                    //*
+			                                   //**
+			for(j=0;j<=i;j++) {                //***
+				System.out.print("*");           //****
+			}
+			
+			System.out.println();
+		
+		}
+		
+//		int num=1,i,j;
+//		for (i=0;i<=2;i++)                     //output
+//			{                                     //1 
+//				for(j=0;j<=i;j++) {                 //23
+//					System.out.print(num);            //456
+//					num++;
+//				}
+//				
+//				System.out.println();
+//			
+//			}
+		
+//		int i,j;
+//		for(i=1;i<=3;i++) {                 //output
+//			for(j=1;j<=i;j++) {               //1
+//				System.out.print(j);            //12
+//			}                                 //123
+//			System.out.println();
+//		}
+ }
+
+}
