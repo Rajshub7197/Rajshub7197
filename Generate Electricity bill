@@ -40,3 +40,14 @@ public class Bill {
 		
 
 }
+			// OUTPUT//
+			enter id
+			123
+			enter name
+			shubham
+			enter unit
+			150
+			coustmer id : 123
+			coustmer name : shubham
+			consumed units : 150
+			charges is: 2250
