@@ -17,10 +17,10 @@ public class Bill {
 		
 		int charge=0;
 		
-		if(unit>0 || unit<=100) {
+		if(unit>0 && unit<=100) {
 			charge=unit*10;
 		}
-		else if (unit>100 || unit <=200) {
+		else if (unit>100 && unit <=200) {
 			charge=unit*15;
 			
 		}
