@@ -1,0 +1,25 @@
+package demo;
+import java.util.*;
+    // perday salary,monthly days,final salary
+public class Salary {
+	public static void main(String[] args) {
+		
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter per day salary: ");
+		int psal=s.nextInt();
+		System.out.println("enter monthly days: ");
+		int mday=s.nextInt();
+		int msal=psal*mday;
+		System.out.println("monthly salary: "+msal);
+		
+        System.out.println("enter absent days: ");	
+        int aday=s.nextInt();
+        
+        int asal=psal*aday;
+        System.out.println("absent days salary: "+asal);
+        
+        int fsal=msal-asal;
+        System.out.println("final salary : "+fsal);
+  	}
+		
+}
