@@ -1,0 +1,27 @@
+package single_inheritance;
+
+
+class Olddata{
+	
+	static String city_name="aurangabaad";
+	int population =3500000;
+	
+}
+public class NewData extends Olddata {
+	
+public static void main(String[] args) {
+	
+	
+	
+	NewData n= new NewData();
+	System.out.println("city name is : "+n.city_name);
+	System.out.println("population is "+n.population);
+	
+}
+
+}
+
+
+//output
+city name is : aurangabaad
+population is 3500000
