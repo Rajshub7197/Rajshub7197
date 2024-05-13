@@ -1,0 +1,40 @@
+package multiple_inheritance;
+
+ class District
+ {
+	static String name ="Nashik";
+	
+ }
+ class City extends District{
+	  
+	 static String Taluka ="dindori";
+	 static String Division="north";
+	 
+ }
+ class Area extends City{
+	 static String Area ="gangapur road";
+	 int area_population=1250000;
+ }
+
+public class Data {
+	
+	
+	public static void main(String[] args) {
+		
+		Area data= new Area();
+		System.out.println("distict name is : "+data.name);
+		System.out.println("taluka name is : "+data.Taluka);
+		System.out.println("area :"+data.Area);
+		System.out.println("number of population: "+data.area_population);
+		
+		
+	}
+
+}
+
+
+//output
+distict name is : Nashik
+taluka name is : dindori
+area :gangapur road
+number of population: 1250000
