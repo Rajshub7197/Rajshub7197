@@ -1,0 +1,29 @@
+package demo;
+ class First 
+ {
+	 int a,b;
+	 First()						//default constructor
+	 {					
+		 a=100;
+		 b=200;
+		 System.out.println("a:"+a+"\nb:"+b);
+	 }
+	 First(First f1){				//copy constructor
+		 int c=f1.a+f1.b;
+		 System.out.println("addition is : "+c);
+	 }
+	 First (String name){			// parameterized constructor
+		 System.out.println("my name is : "+name);	 }
+ }
+ 
+
+class B{
+	
+	public static void main(String[] args) {
+	First f1= new First();       // class object created here 
+	First f2= new First(f1);   
+	First f3 = new First("shubham");  
+}
+}
+
+
