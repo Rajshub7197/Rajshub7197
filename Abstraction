@@ -1,0 +1,60 @@
+package demo;     // Abstarction
+  abstract class Nokia
+  {
+	  
+	  void calling() {
+		  System.out.println("user calling");
+	  }
+	  void reciving() {
+		  System.out.println("user call reciving");
+	  }
+	  
+	  abstract  void song();
+	  abstract void camera();
+  }
+ abstract  class Samsung extends Nokia
+  {
+	  void song() {
+		  System.out.println("play the song");
+	  }
+	  void camera() {
+		  System.out.println("use camera for click pic");
+	  }
+	  
+	  abstract void gaming();
+	 abstract void dancing();
+  }
+  class Apple extends Samsung{
+	  
+	  void gaming() {
+		  System.out.println("play the games");
+	  }
+	  void dancing() {
+		  System.out.println("moblie are dancing");
+	  }
+	  
+  }
+public class New {
+	public static void main(String[] args) {
+		
+		
+		Apple a1= new Apple();
+		a1.calling();
+		a1.reciving();
+		a1.gaming();
+		a1.dancing();
+		a1.camera();
+		a1.song();
+		
+		
+	}
+
+}
+
+
+//  output
+user call reciving
+play the games
+moblie are dancing
+use camera for click pic
+play the song
