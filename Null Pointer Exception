@@ -1,0 +1,21 @@
+package demo;
+
+public class Null {
+	public static void main(String[] args) {
+		 String s1=null;
+		 System.out.println(s1);
+		 try {
+			 System.out.println(s1.toUpperCase());
+		 }
+		 catch(NullPointerException e) {
+			 System.out.println("null value can't be casted");
+			 
+		 }
+	}
+
+}
+
+
+//outout:
+null
+null value can't be casted
