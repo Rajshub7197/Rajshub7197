@@ -1,0 +1,19 @@
+package demo;
+import java.util.*;
+
+public class ABC {
+	public static void main(String[] args) {
+		
+		int a[]= {11,22,33,44,55};
+		try {
+			int c=a[3]+a[5];
+					System.out.println(c);
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+	}
+
+}
+
+// output: java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
