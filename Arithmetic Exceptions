@@ -31,3 +31,40 @@ public class AE {
 //addition is: 100
 //please dont use denominator 0java.lang.ArithmeticException: / by zero
 //substraction is : 100
+
+					{OR}
+package demo;
+import java.util.*;
+
+public class XYz {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int a,b,c;
+		System.out.println("enter first number: ");
+		a=s.nextInt();
+		System.out.println("enter second number: ");
+		b=s.nextInt();
+		try {
+			c=a/b;
+			System.out.println("result is "+c);
+		}
+		catch(Exception e) {
+			System.err.println("dont use 0 as denominator");
+		}
+		
+		c=a+b;
+		System.out.println("add is "+c);
+		c=a*b;
+		System.out.println("mult is "+c);
+		
+	}
+}
+
+// output
+enter first number: 
+100
+enter second number: 
+0
+dont use 0 as denominator
+add is 100
+mult is 0
