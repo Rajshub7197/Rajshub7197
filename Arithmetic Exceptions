@@ -1,0 +1,33 @@
+package demo;
+import java.util.*;
+
+public class AE {
+
+	public static void main(String[] args) {
+		
+		int a,b,c;
+		a=100;
+		b=0;     
+		c=a+b;
+		System.out.println("addition is: "+c);
+		try 
+		{
+			c=a/b;       // here the arithmetic exception we can not use the denominator 0 
+			System.out.println("result: "+c);
+		}
+		catch(ArithmeticException e) {
+			System.err.println("please dont use denominator 0"+e);
+		}
+		c=a-b;
+		System.out.println("substraction is : "+c);
+	
+
+	}
+
+}
+
+
+// output:
+//addition is: 100
+//please dont use denominator 0java.lang.ArithmeticException: / by zero
+//substraction is : 100
