@@ -1,0 +1,22 @@
+package demo;
+
+public class NoFormatException {
+	
+	public static void main(String[] args) {
+		
+		String s1="Shubhamsingh Rajput";
+		try {
+			int a=Integer.parseInt(s1);
+			System.out.println(a);
+			System.out.println("String NumberFormatException occur");
+		}
+		catch(Exception e) {
+			System.out.println("String can not convert to number");
+		}
+	}
+
+}
+
+
+//output:
+String can not convert to number
