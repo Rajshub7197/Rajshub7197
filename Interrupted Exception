@@ -1,0 +1,20 @@
+package demo;
+
+public class IntreruptedException {
+	public static void main(String[] args) // or throws InterruptedException 
+	{
+		
+		for(int i=1;i<=5;i++) 
+		try {
+			System.out.println(i);
+			Thread.sleep(1000);
+		}
+		catch(InterruptedException e) // mention exception here(with the help of try catch method ) or see at the above main method
+  {
+			System.out.println(e);
+		}
+	}
+
+}
+
+//out
