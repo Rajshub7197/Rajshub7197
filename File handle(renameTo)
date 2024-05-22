@@ -1,0 +1,19 @@
+package demo;
+import java.io.*;
+
+public class File_RenameTo {
+	public static void main(String[] args) throws IOException {
+		
+		File f1 = new File("C:\\Users\\rajsh\\OneDrive\\Desktop\\ShubRaj.txt");
+		File f2= new File("C:\\Users\\rajsh\\OneDrive\\Desktop\\robo.txt");
+		if(f1.exists()) {
+			f1.renameTo(f2);
+			System.out.println("file name change succesfully.......");
+		}
+		
+	}
+
+}
+
+//output
+file name change succesfully.......
