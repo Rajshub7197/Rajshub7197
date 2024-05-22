@@ -1,0 +1,25 @@
+package demo;
+import java.io.*;
+
+public class FileHandleCopy {
+	public static void main(String[] args)throws IOException {
+		
+		FileInputStream j = new FileInputStream("C:\\Users\\rajsh\\OneDrive\\Desktop\\pavan.txt");
+		FileOutputStream k = new FileOutputStream("C:\\Users\\rajsh\\OneDrive\\Desktop\\thakur.txt");
+		int i;
+		while((i=j.read())!=-1)
+		{
+			k.write((char)i);
+		}
+		System.out.println("file data copy succesfully");
+		
+		j.close();
+		k.close();
+		
+	}
+
+}
+
+
+//output
+file data copy succesfully
