@@ -1,0 +1,28 @@
+package demo;
+import java.io.*;
+
+public class Filehandlingmethods {
+	public static void main(String[] args)throws IOException{
+		
+		File f1 = new File("C:\\Users\\rajsh\\OneDrive\\Desktop\\ShubRaj.txt");
+	
+		if(f1.exists())
+		{
+			System.out.println(f1.canRead());
+			System.out.println(f1.canWrite());
+			System.out.println(f1.getAbsolutePath());
+			System.out.println(f1.getName());
+			System.out.println(f1.length());
+			
+		}
+		
+	}
+
+}
+
+//output 
+true
+true
+C:\Users\rajsh\OneDrive\Desktop\ShubRaj.txt
+ShubRaj.txt
+30
