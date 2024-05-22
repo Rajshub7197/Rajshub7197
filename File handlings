@@ -1,0 +1,23 @@
+
+package demo;
+import java.io.*;
+
+public class FileHandling {
+	public static void main(String[] args)throws IOException {
+		
+		File f1= new File("C:\\Users\\rajsh\\OneDrive\\Desktop\\ShubRaj.txt");
+		if(f1.createNewFile()) {
+			System.out.println("file create succesfully....");
+		}
+		else
+		{
+			System.out.println("file not created....");
+		}
+		
+	}
+
+}
+
+
+//output
+file create succesfully....
