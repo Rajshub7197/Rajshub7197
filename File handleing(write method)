@@ -1,0 +1,19 @@
+package demo;
+import java.io.*;
+
+public class Writedata {
+	public static void main(String[] args)throws IOException {
+		
+		FileWriter f3= new FileWriter("C:\\Users\\rajsh\\OneDrive\\Desktop\\robo.txt");
+		f3.write("hi coders!!!!!! welcome to file handlings ");
+		System.out.println("data write succesfully");
+		f3.close();
+		
+		
+	}
+
+}
+//output
+*hi coders!!!!!! welcome to file handlings this data writen into the file*
+data write succesfully
+
