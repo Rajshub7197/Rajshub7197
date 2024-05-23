@@ -1,0 +1,33 @@
+package collections;
+import java.util.*;
+
+public class ArrayListMethodForClass {
+	public static void main(String[] args) {
+		
+		ArrayList <String> city = new ArrayList<>();
+		ArrayList <String> state = new ArrayList<>();
+		ArrayList <String> country = new ArrayList<>();
+		city.add("nashik");   //add in array
+		city.add(0, "mumbai");  // add at particular location 
+		System.out.println(city);
+		city.add(2,"nagpur");
+		System.out.println(city);
+		state.add("MH");
+		state.add("GJ");
+		state.add("DL");
+		city.addAll(state);
+		System.out.println(city);
+		country.add("IND");
+		country.add("AUS");
+		country.add("UAE");
+		city.addAll(0, country);
+		System.out.println(city);
+	}
+
+}
+
+// output
+[mumbai, nashik]
+[mumbai, nashik, nagpur]
+[mumbai, nashik, nagpur, MH, GJ, DL]
+[IND, AUS, UAE, mumbai, nashik, nagpur, MH, GJ, DL]
