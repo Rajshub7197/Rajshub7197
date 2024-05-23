@@ -1,0 +1,26 @@
+package collections;
+import java.util.*;
+
+public class ArraysListMethods {
+	public static void main(String[] args) {
+		
+		Collection<Integer> c1 = new ArrayList<>();
+		Collection  c2 = new ArrayList<>();
+		c1.add(86);     //  add
+		c1.add(98);
+		c1.add(63);
+		System.out.println(c1);
+		c2.add("shubham");
+		c2.add("thakur");   // add
+		c2.add("nashik");
+		System.out.println(c2);
+		c1.addAll(c2);               // addAll
+		System.out.println(c1);
+	}
+
+}
+
+// output
+[86, 98, 63]
+[shubham, thakur, nashik]
+[86, 98, 63, shubham, thakur, nashik]
