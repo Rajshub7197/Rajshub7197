@@ -1,0 +1,55 @@
+package collections;
+import java.util.*;     // remain to push at github
+
+
+public class ArrayMethods {
+	public static void main(String[] args) {
+		Scanner s =new Scanner(System.in);
+		int pos;
+		ArrayList <String> city = new ArrayList<>();
+		city.add("Nashik");    // add
+		city.add("Mumbai");
+		city.add("Delhi");
+		city.add("Nagpur");
+		city.add("Mathura");
+		System.out.println(city);    // original list
+		System.out.println(city.contains("Mathura"));  // check contains o/p: true
+		System.out.println(city.contains("Thane"));    // check contains o/p : false
+		System.out.println("enter position");
+		pos=s.nextInt();
+		System.out.println("data present at " + pos + " position is :"+city.get(pos));
+		System.out.println("total city's is : "+city.size());   // total data 
+		city.remove(3);      // remove data from specific location
+		System.out.println("after remove the data : "+city);
+		city.remove("Delhi");   // remove data by checking name
+		System.out.println("after remove the particular city data is: "+city);
+		city.set(2, "thane");  // set add data at particular location
+		System.out.println("add data at second position: "+ city);
+		Collections.sort(city);     // sort for data priny in ascending order
+		System.out.println("after sorting data: "+city);
+		Collections.reverse(city);    // reverse the data 
+		System.out.println("after reversing the data: "+city);
+		
+		
+		city.clear();        // clear remove all the data
+		System.out.println("after clearing the data: "+city);
+		
+	}
+
+}
+
+
+//output  
+[Nashik, Mumbai, Delhi, Nagpur, Mathura]
+true
+false
+enter position
+2
+data present at 2 position is :Delhi
+total city's is : 5
+after remove the data : [Nashik, Mumbai, Delhi, Mathura]
+after remove the particular city data is: [Nashik, Mumbai, Mathura]
+add data at second position: [Nashik, Mumbai, thane]
+after sorting data: [Mumbai, Nashik, thane]
+after reversing the data: [thane, Nashik, Mumbai]
+after clearing the data: []
