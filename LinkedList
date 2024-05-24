@@ -1,0 +1,74 @@
+package collections;
+import java.util.*;
+
+public class LInkedList {
+	public static void main(String[] args) {
+		 LinkedList<String> sub = new LinkedList<>();
+		  sub.add("English");
+		  sub.add("Marathi");
+		  sub.add("History");
+		  sub.add("Math");
+		  System.out.println("Available Subjects: "+ sub);
+		  sub.addFirst("Hindi");       // Add at first
+		  System.out.println("add subject at first: "+sub);
+		  sub.addLast("Biology");      // add at last
+		  System.out.println("add subject at last: "+sub);
+		  
+		  
+		 String firstelement = sub.getFirst();
+		 System.out.println("First element of lists is: "+firstelement);
+		 String lastelement = sub.getLast();
+		 System.out.println("Last element of lists is: "+lastelement);
+		 String element = sub.get(3);
+		 System.out.println("element present at 3rd position: "+element);
+		 for(String elements:sub)
+		 
+		 {
+			 System.out.println(elements);
+		 }
+		 System.out.println(sub);
+		 String elements =sub.removeFirst();
+		 System.out.println("after removing first element: "+sub);
+		 String elements1=sub.removeLast();
+		 System.out.println("after removing Last element: "+sub);
+		 String elements2 = sub.remove(2);
+		 System.out.println("after removing 2 element: "+sub);
+	
+		 sub.remove("Math");
+		 System.out.println("after remove the math : "+sub);
+		 sub.add("c++");
+		 sub.add("java");
+		 sub.add("python");
+		 System.out.println(sub);
+		 System.out.println(sub.contains("java"));
+		 int index = sub.indexOf("c++");
+		 System.out.println("location of c++ is : "+index);
+		 System.out.println("list is empty or not : "+ sub.isEmpty());
+		 
+    }
+
+}
+
+
+//output: 
+Available Subjects: [English, Marathi, History, Math]
+add subject at first: [Hindi, English, Marathi, History, Math]
+add subject at last: [Hindi, English, Marathi, History, Math, Biology]
+First element of lists is: Hindi
+Last element of lists is: Biology
+element present at 3rd position: History
+Hindi
+English
+Marathi
+History
+Math
+Biology
+[Hindi, English, Marathi, History, Math, Biology]
+after removing first element: [English, Marathi, History, Math, Biology]
+after removing Last element: [English, Marathi, History, Math]
+after removing 2 element: [English, Marathi, Math]
+after remove the math : [English, Marathi]
+[English, Marathi, c++, java, python]
+true
+location of c++ is : 2
+list is empty or not : false
